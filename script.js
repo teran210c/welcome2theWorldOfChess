@@ -11,7 +11,7 @@ game.load('7k/8/8/8/8/8/8/R6K w KQkq d6 0 2')
 
 function onDragStart (source, piece, position, orientation) {
   // do not pick up pieces if the game is over
-  // if (game.game_over()) return false
+  if (game.game_over()) return false
 
   // only pick up pieces for the side to move
   if ((game.turn() === 'w' && piece.search(/^b/) !== -1) ||
@@ -53,10 +53,10 @@ function updateStatus () {
     status = 'Game over, ' + moveColor + ' is in checkmate.'
   }
 
-  // draw?
-  // else if (game.in_draw()) {
-  //   status = 'Game over, drawn position'
-  // }
+  //draw?
+  else if (game.in_draw()) {
+    status = 'Game over, drawn position'
+  }
 
   // game still on
   else {
