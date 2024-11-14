@@ -9,7 +9,7 @@ var $pgn = $('#pgn')
 var whiteSquareGrey = '#a9a9a9'
 var blackSquareGrey = '#696969'
 
-game.load('7k/8/8/8/8/8/8/R6K w KQkq d6 0 2')
+game.load('7k/8/8/8/8/8/8/R6K w - - 0 1')
 
 function removeGreySquares () {
   $('#myBoard .square-55d63').css('background', '')
