@@ -16,7 +16,7 @@
       crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.2/chess.js" integrity="sha384-s3XgLpvmHyscVpijnseAmye819Ee3yaGa8NxstkJVyA6nuDFjt59u1QvuEl/mecz" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,43 +26,34 @@
         title="YouTube video player" frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       
         <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="Images\joseRaulCapablanca.jpg" class="d-block w-50 mx-auto" alt="...">
-                <p><strong>José Raúl Capablanca y Graupera</strong> 
-                    (1888-1942) fue un ajedrecista cubano, campeón mundial de ajedrez de 1921 a 1927. Conocido como 
-                    "El Mozart del Ajedrez" por su talento precoz, Capablanca aprendió a jugar observando a su padre. 
-                    Su estilo de juego era famoso por su simplicidad y precisión.</p>
-            </div>
-            </div>
-              <div class="carousel-item">
-                <img src="Images\anatoliKarpov.jpg" class="d-block w-50 mx-auto" alt="...">
-                <p><strong>Anatoli Yevgénevich Kárpov</strong> (nacido en 1951) es un gran maestro de ajedrez ruso y fue campeón mundial de ajedrez de 1975 a 1985 y de 1993 a 1999 en la versión de la FIDE. Kárpov es conocido por su estilo posicional y su capacidad para explotar pequeñas ventajas.</p>
-              </div>
-              <div class="carousel-item">
-                <img src class="\Images\Kas04568.jpg" class="d-block w-50 mx-auto" alt="...">
-                <p><strong>Garri Kímovich Kaspárov</strong> (nacido en 1963) es un gran maestro de ajedrez ruso y fue campeón mundial de ajedrez de 1985 a 2000. Kaspárov es famoso por su estilo agresivo y su profundo conocimiento teórico. También es conocido por su rivalidad con Kárpov y por su trabajo en política y activismo.</p>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Images\joseRaulCapablanca.jpg" class="d-block w-100" width="800" height="500" alt="...">
             </div>
             <div class="carousel-item">
-                <img src class="Images/magnusCarlsen.jpeg" class="d-block w-50 mx-auto" alt="...">
-                <p><strong>Sven Magnus Øen Carlsen</strong> (nacido en 1990) es un gran maestro de ajedrez noruego y ha sido campeón mundial de ajedrez desde 2013. Carlsen es conocido por su versatilidad y su capacidad para jugar en una amplia variedad de estilos. Ha sido el número uno del mundo en el ranking de la FIDE durante muchos años.</p>
+              <img src="Images\anatoliKarpov.jpg" class="d-block w-100" width="800" height="500" alt="...">
             </div>
+            <div class="carousel-item">
+              <img src="Images\gariKasparov.jpg" class="d-block w-100" width="800" height="500" alt="...">
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
+
         <div class="player-card">
             <h2>José Raúl Capablanca</h2>
             <img src="Images\joseRaulCapablanca.jpg" class="players-pics"/>
@@ -103,7 +94,7 @@
             <div id="pgn"></div>
         
         </div>
-    </div>    
+    </div> 
 </body>
     <script src="./script.js"></script>
 </html>

@@ -63,11 +63,3 @@ p {
     text-align: center;
     border-radius: 4px;
 }
-  
-
-.carousel-control-prev-icon { 
-    background-color: rgb(172, 146, 146);
-} 
-.carousel-control-next-icon { 
-    background-color: rgb(172, 146, 146);;
-} 
