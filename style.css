@@ -42,7 +42,7 @@ h2 {
 }
 
 .players-pics {
-    width: 150px;
+    width: auto;
     height: auto;
     border-radius: 8px;
     margin: 10px 0;
@@ -63,3 +63,11 @@ p {
     text-align: center;
     border-radius: 4px;
 }
+  
+
+.carousel-control-prev-icon { 
+    background-color: rgb(172, 146, 146);
+} 
+.carousel-control-next-icon { 
+    background-color: rgb(172, 146, 146);;
+} 
