@@ -126,6 +126,8 @@ var config = {
 }
 board = Chessboard('myBoard', config)
 
+var board1 = Chessboard('board1', 'start')
+
 updateStatus()
 
 //7k/8/8/8/8/8/8/R6K
