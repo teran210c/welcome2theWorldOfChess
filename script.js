@@ -31,10 +31,21 @@ function onDragStart (source, piece, position, orientation) {
   if (game.game_over()) return false
 
   // only pick up pieces for the side to move
-  if ((game.turn() === 'w' && piece.search(/^b/) !== -1) ||
+  if (/*(game.turn() === 'w' && piece.search(/^b/) !== -1) || */
       (game.turn() === 'b' && piece.search(/^w/) !== -1)) {
     return false
   }
+}
+
+function makeRandomMove () {
+  var possibleMoves = game.moves()
+
+  // game over
+  if (possibleMoves.length === 0) return
+
+  var randomIdx = Math.floor(Math.random() * possibleMoves.length)
+  game.move(possibleMoves[randomIdx])
+  board.position(game.fen())
 }
 
 function onDrop (source, target) {
@@ -49,6 +60,9 @@ function onDrop (source, target) {
 
   // illegal move
   if (move === null) return 'snapback'
+
+  // make random legal move for black
+  window.setTimeout(makeRandomMove, 250)
 
   updateStatus()
 }
