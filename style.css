@@ -1,13 +1,36 @@
-html, body {
+body {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
+    box-sizing: border-box;
 }
 
 .desktop-frame {
-    width: 1440px;
-    height: 1024px;
+    max-width: 1440px;
     margin: 0 auto;
-    background-color: #f0f0f0; /* Color de fondo opcional */
+    height: 1024px;
+    background-color: #f5f5f5;
+}
+
+#logoW2tWoC {
+    position: absolute;
+    width: 452px;
+    height: 429px;
+    left: 494px;
+    top: 298px;
+    animation: resizeAndMove 2s ease-in-out forwards;
+}
+
+@keyframes resizeAndMove {
+    from {
+        width: 452px;
+        height: 429px;
+        left: 494px;
+        top: 298px;
+    }
+    to {
+        width: 119px;
+        height: 112px;
+        left: 33px;
+        top: 30px;
+    }
 }

@@ -1,71 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome2theWorldOfChess</title>
-    <link rel="stylesheet"
-      href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css" integrity="sha384-q94+BZtLrkL1/ohfjR8c6L+A6qzNH9R2hBLwyoAfu3i/WCvQjzL2RQJ3uNHDISdU"
-      crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-      integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"
-      integrity="sha384-8Vi8VHwn3vjQ9eUHUxex3JSN/NFqUg3QbPyX8kWyb93+8AC/pPWTzj+nHtbC5bxD" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.2/chess.js" integrity="sha384-s3XgLpvmHyscVpijnseAmye819Ee3yaGa8NxstkJVyA6nuDFjt59u1QvuEl/mecz" 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome2theWorldOfChess</title>
+  <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css"
+    integrity="sha384-q94+BZtLrkL1/ohfjR8c6L+A6qzNH9R2hBLwyoAfu3i/WCvQjzL2RQJ3uNHDISdU" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
     crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"
+    integrity="sha384-8Vi8VHwn3vjQ9eUHUxex3JSN/NFqUg3QbPyX8kWyb93+8AC/pPWTzj+nHtbC5bxD"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.2/chess.js"
+    integrity="sha384-s3XgLpvmHyscVpijnseAmye819Ee3yaGa8NxstkJVyA6nuDFjt59u1QvuEl/mecz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>  
-  <div class="desktop-frame">  
-    <div>
-        <img id="logoW2tWoC" src="Images\W2twOch.png" alt="logoW2tWoC">
-        <h1>Welcome to the world of chess</h1>
-        <iframe width="560" height="315" src="Welcome to the World of Chess ♟️🗿.mp4" 
-        title="YouTube video player" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <div class="player-card">
-            <h2>José Raúl Capablanca</h2>
-            <img src="Images\joseRaulCapablanca.jpg" class="players-pics"/>
-            <p><strong>José Raúl Capablanca y Graupera</strong> 
-                (1888-1942) fue un ajedrecista cubano, campeón mundial de ajedrez de 1921 a 1927. Conocido como 
-                "El Mozart del Ajedrez" por su talento precoz, Capablanca aprendió a jugar observando a su padre. 
-                Su estilo de juego era famoso por su simplicidad y precisión.</p>
-        </div>
-        <div class="player-card">
-            <h2>Anatoli Kárpov</h2>
-            <img src="Images\anatoliKarpov.jpg" class="players-pics"/>
-            <p><strong>Anatoli Yevgénevich Kárpov</strong> (nacido en 1951) es un gran maestro de ajedrez ruso y fue campeón mundial de ajedrez de 1975 a 1985 y de 1993 a 1999 en la versión de la FIDE. Kárpov es conocido por su estilo posicional y su capacidad para explotar pequeñas ventajas.</p>
-        </div>
-        <div class="player-card">
-            <h2>Garri Kaspárov</h2>
-            <img src="Images\gariKasparov.webp" class="players-pics"/>
-            <p><strong>Garri Kímovich Kaspárov</strong> (nacido en 1963) es un gran maestro de ajedrez ruso y fue campeón mundial de ajedrez de 1985 a 2000. Kaspárov es famoso por su estilo agresivo y su profundo conocimiento teórico. También es conocido por su rivalidad con Kárpov y por su trabajo en política y activismo.</p>
-        </div>
-        <div class="player-card">            
-            <h2>Magnus Carlsen</h2>
-            <img src="Images/magnusCarlsen.jpeg" class="players-pics"/>
-            <p><strong>Sven Magnus Øen Carlsen</strong> (nacido en 1990) es un gran maestro de ajedrez noruego y ha sido campeón mundial de ajedrez desde 2013. Carlsen es conocido por su versatilidad y su capacidad para jugar en una amplia variedad de estilos. Ha sido el número uno del mundo en el ranking de la FIDE durante muchos años.</p>
-        </div>
-        <div class="player-card">
-            <h2>Leontxo García</h2>
-            <img src="Images/leontxoGarcia.jpg" class="players-pics"/>
-            <p><strong>Leontxo García Olasagasti</strong> (nacido en 1956) es un periodista, conferenciante y comentarista de ajedrez español. García es conocido por su trabajo en la difusión del ajedrez a través de sus artículos, libros y programas de radio y televisión. Ha sido una figura clave en la popularización del ajedrez en el mundo hispanohablante.</p>
-        </div>
-        <div>
-            <h2>Mates simples</h2>
-            <p><strong>Mate de torre y rey</strong></p>
-            <div id="myBoard" style="width: 400px"></div>
-            <label>Status:</label>
-            <div id="status"></div>
-            <label>FEN:</label>
-            <div id="fen"></div>
-            <label>PGN:</label>
-            <div id="pgn"></div>
-        
-        </div>
-    </div>  
-  </div>  
+
+<body>
+  <!-- <div class="desktop-frame"> -->
+    <img id="logoW2tWoC" src="Images\chess-icon.png" alt="logoW2tWoC">
+    <!-- <h1>Welcome to the world of chess</h1>
+    <iframe width="560" height="315" src="Welcome to the World of Chess ♟️🗿.mp4" title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="player-card">
+      <h2>José Raúl Capablanca</h2>
+      <img src="Images\joseRaulCapablanca.jpg" class="players-pics" />
+      <p><strong>José Raúl Capablanca y Graupera</strong>
+        (1888-1942) fue un ajedrecista cubano, campeón mundial de ajedrez de 1921 a 1927. Conocido como
+        "El Mozart del Ajedrez" por su talento precoz, Capablanca aprendió a jugar observando a su padre.
+        Su estilo de juego era famoso por su simplicidad y precisión.</p>
+    </div>
+    <div class="player-card">
+      <h2>Anatoli Kárpov</h2>
+      <img src="Images\anatoliKarpov.jpg" class="players-pics" />
+      <p><strong>Anatoli Yevgénevich Kárpov</strong> (nacido en 1951) es un gran maestro de ajedrez ruso y fue campeón
+        mundial de ajedrez de 1975 a 1985 y de 1993 a 1999 en la versión de la FIDE. Kárpov es conocido por su estilo
+        posicional y su capacidad para explotar pequeñas ventajas.</p>
+    </div>
+    <div class="player-card">
+      <h2>Garri Kaspárov</h2>
+      <img src="Images\gariKasparov.webp" class="players-pics" />
+      <p><strong>Garri Kímovich Kaspárov</strong> (nacido en 1963) es un gran maestro de ajedrez ruso y fue campeón
+        mundial de ajedrez de 1985 a 2000. Kaspárov es famoso por su estilo agresivo y su profundo conocimiento teórico.
+        También es conocido por su rivalidad con Kárpov y por su trabajo en política y activismo.</p>
+    </div>
+    <div class="player-card">
+      <h2>Magnus Carlsen</h2>
+      <img src="Images/magnusCarlsen.jpeg" class="players-pics" />
+      <p><strong>Sven Magnus Øen Carlsen</strong> (nacido en 1990) es un gran maestro de ajedrez noruego y ha sido
+        campeón mundial de ajedrez desde 2013. Carlsen es conocido por su versatilidad y su capacidad para jugar en una
+        amplia variedad de estilos. Ha sido el número uno del mundo en el ranking de la FIDE durante muchos años.</p>
+    </div>
+    <div class="player-card">
+      <h2>Leontxo García</h2>
+      <img src="Images/leontxoGarcia.jpg" class="players-pics" />
+      <p><strong>Leontxo García Olasagasti</strong> (nacido en 1956) es un periodista, conferenciante y comentarista de
+        ajedrez español. García es conocido por su trabajo en la difusión del ajedrez a través de sus artículos, libros
+        y programas de radio y televisión. Ha sido una figura clave en la popularización del ajedrez en el mundo
+        hispanohablante.</p>
+    </div> -->
+    <!-- <div>
+      <h2>Mates simples</h2>
+      <p><strong>Mate de torre y rey</strong></p>
+      <div id="myBoard" style="width: 400px"></div>
+      <label>Status:</label>
+      <div id="status"></div>
+      <label>FEN:</label>
+      <div id="fen"></div>
+      <label>PGN:</label>
+      <div id="pgn"></div>
+    </div> -->
+  <!-- </div> -->
+   
 </body>
-    <script src="./script.js"></script>
+<script src="./script.js"></script>
+
 </html>
