@@ -17,7 +17,16 @@ body {
     height: 429px;
     left: 494px;
     top: 298px;
-    animation: resizeAndMove 2s ease-in-out forwards;
+    animation: fadeIn 1s ease-in-out forwards, resizeAndMove 1s ease-in-out 1s forwards;
+}
+
+@keyframes fadeIn { 
+    from { 
+        opacity: 0; 
+    } 
+    to { 
+        opacity: 1; 
+    } 
 }
 
 @keyframes resizeAndMove {
