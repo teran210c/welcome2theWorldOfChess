@@ -17,7 +17,7 @@ body {
     height: 429px;
     left: 494px;
     top: 298px;
-    animation: fadeIn 1s ease-in-out forwards, resizeAndMove 1s ease-in-out 1s forwards;
+    animation: fadeIn 1s ease-in-out forwards;
 }
 
 @keyframes fadeIn { 
@@ -27,21 +27,6 @@ body {
     to { 
         opacity: 1; 
     } 
-}
-
-@keyframes resizeAndMove {
-    from {
-        width: 452px;
-        height: 429px;
-        left: 494px;
-        top: 298px;
-    }
-    to {
-        width: 119px;
-        height: 112px;
-        left: 33px;
-        top: 30px;
-    }
 }
 
 .barra-superior {
