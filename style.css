@@ -43,3 +43,17 @@ body {
         top: 30px;
     }
 }
+
+.barra-superior {
+    display: flex;
+    padding-top: 30px;
+    padding-right: 30px;
+    height: 112px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.barra-superior button {
+   
+
+}
