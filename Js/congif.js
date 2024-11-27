@@ -1,3 +1,11 @@
+var board = null
+var game = new Chess()
+var $status = $('#status')
+var $fen = $('#fen')
+var $pgn = $('#pgn')
+var whiteSquareGrey = '#a9a9a9'
+var blackSquareGrey = '#696969'
+
 function removeGreySquares () {
     $('#myBoard .square-55d63').css('background', '')
   }
