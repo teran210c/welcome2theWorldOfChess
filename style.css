@@ -24,8 +24,6 @@ html, body {
     height: 223px;
 }
 
-
-
 #image-container {
     display: flex;
     justify-content: center;
@@ -34,6 +32,8 @@ html, body {
 }
 
 #welcome-bottom {
+    display: flex;
+    justify-content: space-between;
     width: 100vw;
     height: 223px;
 }
