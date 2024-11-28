@@ -7,19 +7,35 @@ html, body {
 
 #welcome {
     display: flex;
-    width: 1500px;
+    width: 100vw;
     height: 900px;
     padding: 0;
     background: radial-gradient(circle, 
     rgba(255, 239, 200, 1) 0%, 
     rgba(231, 204, 151, 1) 50%,
     rgba(170, 138, 90, 1) 100%);
+    flex-direction: column;
+}
+
+#welcome-top {
+    width: 100vw;
+    height: 223px;
+}
+
+#image-container {
+    display: flex;
     justify-content: center;
-    align-items: center;
+    width: 100vw;
+    height: 451px;
+}
+
+#welcome-bottom {
+    width: 100vw;
+    height: 223px;
 }
 
 .first-icon {
-    width: 446px;
+    width: 452px;
     height: 452px;
 }
 
