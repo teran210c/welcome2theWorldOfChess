@@ -6,7 +6,10 @@ html, body {
 #welcome {
     width: 1514px;
     height: 900px;
-    background-color: rgb(231, 204, 151);
+    background: radial-gradient(circle, 
+    rgba(255, 239, 200, 1) 0%, 
+    rgba(231, 204, 151, 1) 50%,
+    rgba(170, 138, 90, 1) 100%);
 }
 
 /* .desktop-frame {
