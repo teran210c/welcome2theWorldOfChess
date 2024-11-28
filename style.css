@@ -22,6 +22,8 @@ html, body {
     height: 223px;
 }
 
+
+
 #image-container {
     display: flex;
     justify-content: center;
@@ -37,6 +39,11 @@ html, body {
 .first-icon {
     width: 452px;
     height: 452px;
+}
+
+.corner-ornament {
+    width: 201px;
+    height: 224px;
 }
 
 /* .desktop-frame {
