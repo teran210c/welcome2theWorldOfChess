@@ -3,7 +3,11 @@ html, body {
     height: 8000px;
 }
 
-
+#welcome {
+    width: 1514px;
+    height: 900px;
+    background-color: rgb(231, 204, 151);
+}
 
 /* .desktop-frame {
     max-width: 1440px;
