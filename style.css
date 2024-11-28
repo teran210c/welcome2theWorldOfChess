@@ -18,7 +18,10 @@ html, body {
     align-items: center;
 }
 
-
+.first-icon {
+    width: 446px;
+    height: 452px;
+}
 
 /* .desktop-frame {
     max-width: 1440px;
