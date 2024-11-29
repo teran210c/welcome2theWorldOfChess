@@ -54,14 +54,17 @@ html, body {
     align-items: center;
     width: 100vw;
     height: 900px;
-    background-image: url('Images/frame1.jpg');
-    background-size: contain; 
+    background-image: url('Images/frame2.jpg');
+    background-size: 100% 100%;
     background-repeat: no-repeat;
+}
 
 #Welcome2theWorldOfChess-video iframe {
     width: 500px;
-    height: 350px;
+    height: 600px;
 }
+
+
 
 /* .desktop-frame {
     max-width: 1440px;
