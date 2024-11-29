@@ -82,9 +82,23 @@ html, body {
     height: 224px;
 }
 
-#intro {
+#cuerpo {
+    display: flex;
+}
+
+#contenido {
     width: 1379px;
     height: 574px;
+}
+
+#costado-izquierdo {
+    width: 60px;
+    height: 100vw;
+}
+
+#costado-derecho {
+    width: 60px;
+    height: 100vw;
 }
 
 /* .desktop-frame {
