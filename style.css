@@ -67,8 +67,19 @@ html, body {
 #cabecera {
     display: flex;
     justify-content: center;
+    justify-content: space-around;
     width: 100vw;
     height: 250px;
+}
+
+.adorno-cabecera {
+    width: 449px;
+    height: fit-content;
+}
+
+.adorno-cabecera.centro {
+    width: 556px;
+    height: 224px;
 }
 
 /* .desktop-frame {
