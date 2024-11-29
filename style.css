@@ -89,8 +89,6 @@ html, body {
 #contenido {
     display: flex;
     flex-direction: column;
-    width: 1379px;
-    height: 574px;
 }
 
 #costado-izquierdo {
@@ -101,6 +99,11 @@ html, body {
 #costado-derecho {
     width: 60px;
     height: 100vw;
+}
+
+#intro {
+    width: 1379px;
+    height: 574px;
 }
 
 /* .desktop-frame {
