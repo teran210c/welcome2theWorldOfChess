@@ -103,7 +103,17 @@ html, body {
 
 #intro {
     width: 1379px;
-    height: 574px;
+    height: 650px;
+}
+
+#historia{
+    width: 1379px;
+    height: 900px;
+}
+
+#jugadores-celebres{
+    width: 1379px;
+    height: 900px;
 }
 
 /* .desktop-frame {
