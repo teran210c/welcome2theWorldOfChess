@@ -64,7 +64,10 @@ html, body {
     height: 600px;
 }
 
-
+#cabecera {
+    width: 100vw;
+    height: 250px;
+}
 
 /* .desktop-frame {
     max-width: 1440px;
