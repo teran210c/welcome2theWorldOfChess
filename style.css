@@ -116,6 +116,11 @@ html, body {
     height: 900px;
 }
 
+#ejercicos {
+    width: 1379px;
+    height: 900px;
+}
+
 /* .desktop-frame {
     max-width: 1440px;
     margin: 0 auto;
