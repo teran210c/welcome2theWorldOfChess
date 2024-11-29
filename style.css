@@ -82,6 +82,11 @@ html, body {
     height: 224px;
 }
 
+#intro {
+    width: 1379px;
+    height: 574px;
+}
+
 /* .desktop-frame {
     max-width: 1440px;
     margin: 0 auto;
