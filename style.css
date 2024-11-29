@@ -87,6 +87,8 @@ html, body {
 }
 
 #contenido {
+    display: flex;
+    flex-direction: column;
     width: 1379px;
     height: 574px;
 }
