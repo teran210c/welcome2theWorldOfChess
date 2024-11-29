@@ -52,11 +52,11 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 418px;
-    background-image: url('Images/TheatreBg.png');
-    background-size: cover;
-}
+    width: 100vw;
+    height: 900px;
+    background-image: url('Images/frame1.jpg');
+    background-size: contain; 
+    background-repeat: no-repeat;
 
 #Welcome2theWorldOfChess-video iframe {
     width: 500px;
