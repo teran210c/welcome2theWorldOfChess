@@ -115,11 +115,19 @@ html, body {
 }
 
 #historia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 1379px;
     height: 900px;
 }
 
 #jugadores-celebres{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 1379px;
     height: 900px;
 }
