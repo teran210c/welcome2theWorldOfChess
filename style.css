@@ -31,6 +31,7 @@ nav img {
     height: 90vh;
     background-image: url(/Images/hero-bg.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     /* opacity: 70%; */
 }
 
@@ -74,4 +75,14 @@ nav img {
     color: #ffffff;
     width: 25vw;
     height: fit-content;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+}
+
+img {
+    height: 100%;
 }
