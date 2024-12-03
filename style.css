@@ -1,172 +1,60 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+body {
+    display: flex; 
+    flex-direction: column; 
+    margin: 0; 
+    /* height: 100vh;
+    width: 100vw; */
 }
 
-#welcome {
-    display: flex;
-    width: 100vw;
-    height: 900px;
-    padding: 0;
-    background: radial-gradient(circle, 
-    rgba(255, 239, 200, 1) 0%, 
-    rgba(231, 204, 151, 1) 50%,
-    rgba(170, 138, 90, 1) 100%);
-    flex-direction: column;
-}
-
-#welcome-top {
+nav {
     display: flex;
     justify-content: space-between;
-    width: 100vw;
-    height: 223px;
+    height: 10vh;
+    padding: 0 20px 0 20px;
 }
 
-#image-container {
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    height: 451px;
+nav img {
+    max-width: 100%; 
+    max-height: 100%; 
+    height: auto;
 }
 
-#welcome-bottom {
-    display: flex;
-    justify-content: space-between;
-    width: 100vw;
-    height: 223px;
-}
-
-.first-icon {
-    width: 452px;
-    height: 452px;
-}
-
-.corner-ornament {
-    width: 201px;
-    height: 224px;
-}
-
-#Welcome2theWorldOfChess-video {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 900px;
-    background-image: url('Images/frame2.jpg');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-
-#Welcome2theWorldOfChess-video iframe {
-    width: 500px;
-    height: 600px;
-}
-
-#cabecera {
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    width: 100vw;
-    height: 250px;
-}
-
-.adorno-cabecera {
-    width: 449px;
-    height: fit-content;
-}
-
-.adorno-cabecera.centro {
-    width: 556px;
-    height: 224px;
-}
-
-#cuerpo {
-    display: flex;
-}
-
-#contenido {
-    display: flex;
-    flex-direction: column;
-}
-
-#costado-izquierdo {
-    width: 60px;
-    height: 100vw;
-}
-
-#costado-derecho {
-    width: 60px;
-    height: 100vw;
-}
-
-#intro {
+#nav-buttons {
     display: flex;
     align-items: center;
-    flex-direction: column;
-    width: 1379px;
-    height: 650px;
+    gap: 20px;
 }
 
-#intro p {
-    width: 752px;
-    height: 144px;
-}
-
-#historia{
+#hero {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 1379px;
-    height: 900px;
+    align-content: space-evenly;
+    height: 90vh;
+    background-image: url(/Images/hero-bg.jpg);
+    background-size: cover;
+    /* opacity: 70%; */
 }
 
-#jugadores-celebres{
+#hero-main {
+    margin-left: 120px; /* Ajusta la posición X */
+    margin-top: 150px;  /* Ajusta la posición Y */
+}
+
+#hero-main h3 {
+    font: 900;
+    font-size: 36px;
+    color: #ffffff;
+}
+#hero-main h1 {
+    font: icon;
+    font-size: 96px;
+    color: #000000;
+}
+
+#hero-buttons {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 1379px;
-    height: 900px;
+    gap: 10px;
 }
 
-#ejercicios {
-    width: 1379px;
-    height: 900px;
+#video{
+    height: 100vh;
 }
-
-/* .desktop-frame {
-    max-width: 1440px;
-    margin: 0 auto;
-    height: 1024px;
-    background-color: #f5f5f5;
-} */
-
-/* #logoW2tWoC {
-    position: absolute;
-    width: 452px;
-    height: 429px;
-    left: 494px;
-    top: 298px;
-    animation: fadeIn 3s;
-}
-
-@keyframes fadeIn { 
-    from { 
-        opacity: 1; 
-    } 
-    to { 
-        opacity: 0; 
-    } 
-}
-
-.logo-principal-container {
-    display: flex;
-    padding-top: 30px;
-    padding-right: 30px;
-    height: 112px;
-    justify-content: flex-end;
-    align-items: center;
-} */
