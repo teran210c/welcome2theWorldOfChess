@@ -44,6 +44,7 @@ nav img {
     font-size: 36px;
     color: #ffffff;
 }
+
 #hero-main h1 {
     font: icon;
     font-size: 96px;
@@ -55,6 +56,22 @@ nav img {
     gap: 10px;
 }
 
-#video{
-    height: 100vh;
+#video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* align-items: stretch; */
+    height: 60vh;
+    background-image: url(Images/frame2.JPG);
+    background-size: cover;
+}
+
+#video iframe {
+    height: 100%;
+}
+
+.p {
+    color: #ffffff;
+    width: 25vw;
+    height: fit-content;
 }
