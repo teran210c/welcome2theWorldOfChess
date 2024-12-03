@@ -14,9 +14,8 @@ nav {
 }
 
 nav img {
-    max-width: 100%; 
-    max-height: 100%; 
-    height: auto;
+    height: 10vh;
+    width: 6.5vw;
 }
 
 #nav-buttons {
@@ -65,6 +64,7 @@ nav img {
     height: 60vh;
     background-image: url(Images/frame2.JPG);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #video iframe {
@@ -77,12 +77,21 @@ nav img {
     height: fit-content;
 }
 
-#intro {
+#seccion {
     display: flex;
     flex-direction: column;
-    height: 95vh;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
+    row-gap: 20px;
+    height: 75vh;
 }
 
-img {
-    height: 100%;
+#seccion p, h1 {
+    width: 80%;
+    text-align: center;
+}
+
+#seccion img {
+    width: 45%;
+    height: 75%;
 }
