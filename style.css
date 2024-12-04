@@ -71,7 +71,7 @@ nav img {
     height: 100%;
 }
 
-.p {
+.parrafo-video {
     color: #ffffff;
     width: 25vw;
     height: fit-content;
@@ -137,21 +137,49 @@ nav img {
 
 #card {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: space-evenly; /* Distribuye uniformemente imagen y texto */
     align-items: center;
-    height: 65vh;
-    width: 20vw;
-    border: 2px solid black;
-    border-radius: 3%;
-    padding-left: 30px;
-    padding-right: 30px;
-    row-gap: 10px;
+    height: 70vh;
+    width: 22vw;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
 }
 
-#jugadores img {
-    height: 20vh;
-    width: 10vw;
+#card img {
+    height: auto;
+    width: 80%;
+    max-height: 200px; /* Altura máxima para las imágenes */
+    object-fit: contain; /* Ajusta la imagen sin recortarla */
+    margin-bottom: 10px; /* Espaciado entre la imagen y la descripción */
+}
+
+.descripcion-jugador {
+    font-size: 0.9rem;
+    text-align: justify;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 100%; /* Asegura que use todo el espacio disponible */
+}
+
+.nombre-jugador {
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+ 
+.descripcion-jugador {
+    font-size: 0.9rem; /* Texto más pequeño */
+    text-align: justify; /* Justifica el texto para una mejor legibilidad */
+    line-height: 1.5; /* Espaciado entre líneas */
+    overflow: hidden; /* Oculta el desbordamiento */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos al desbordar */
+    /* Limita la altura máxima de la descripción */
 }
 
 #seccion-niveles {
