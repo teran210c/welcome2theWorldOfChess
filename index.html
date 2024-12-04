@@ -10,8 +10,12 @@
    <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js" integrity="sha384-8Vi8VHwn3vjQ9eUHUxex3JSN/NFqUg3QbPyX8kWyb93+8AC/pPWTzj+nHtbC5bxD" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.2/chess.js" integrity="sha384-s3XgLpvmHyscVpijnseAmye819Ee3yaGa8NxstkJVyA6nuDFjt59u1QvuEl/mecz" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="style.css">
-   <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 
 <body>
    <nav>
@@ -46,131 +50,139 @@
       </p>
       <img src="/Images/AjedrezDummies.png" alt="">
    </section>
-   <section>
+   <section id="historia">
       <h1>Historia</h1>
-      <div class="text-xl font-bold m-5 text-center">Use Keyboard Arrow Keys To Go Left And Right</div>
-   
-      <div class="gallery border-2 rounded mx-auto m-5 bg-white" style="width:750px;">
-         <div class="top flex p-2 border-b select-none">
-            <div class="heading text-gray-800 w-full pl-3 font-semibold my-auto"></div>
-            <div class="buttons ml-auto flex text-gray-600 mr-1">
-               <svg action="prev" class="w-7 border-2 rounded-l-lg p-1 cursor-pointer border-r-0"
-                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path action="prev" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                     d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-               </svg>
-               <svg action="next" class="w-7 border-2 rounded-r-lg p-1 cursor-pointer" xmlns="http://www.w3.org/2000/svg"
-                  fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path action="next" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                     d="M14 5l7 7m0 0l-7 7m7-7H3" />
-               </svg>
-            </div>
+      <div>
+         <div id="carouselExampleCaptions" class="carousel slide pointer-event mx-auto" style="max-width: 800px;">
+         <div class="carousel-indicators">
+         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
          </div>
-         <div class="content-area w-full h-96 overflow-hidden">
-            <div class="platform shadow-xl h-full flex">
-               <!-- frame start -->
-               <div class="each-frame border-box flex-none h-full" title="Tiger">
-                  <!-- title shows in top -->
-                  <!-- this is full editable area -->
-                  <div class="main flex w-full p-8">
-                     <div class="sub w-4/6 my-auto">
-                        <img class="w-full p-8"
-                           src="https://images-na.ssl-images-amazon.com/images/I/81eJpEEQwYL._AC_SL1500_.jpg" alt="">
-                     </div>
-                     <div class="sub w-full my-auto">
-                        <div class="head text-3xl font-bold mb-4">The Tiger</div>
-                        <div class="long-text text-lg">(Panthera tigris) is the largest extant cat species and a member of
-                           the
-                           genus
-                           Panthera. It is most recognisable for its dark vertical stripes on orange-brown fur with a
-                           lighter
-                           underside. It is an apex predator, primarily preying on ungulates such as deer and wild boar.
-                        </div>
-                        <!-- this buttons are usable everywhere inside gallery element -->
-                        <div
-                           class="goto border border-gray-400 text-sm font-semibold inline-block mt-2 p-1 px-2 rounded cursor-pointer"
-                           action="goto" goto="2">Goto Third Frame</div>
-                        <!-- add (action="goto" goto="[val]{0 means first frame and so on}") attribute to jump into frames -->
-                        <div
-                           class="goto border border-gray-400 text-sm font-semibold inline-block mt-2 p-1 px-2 rounded cursor-pointer"
-                           action="goto" goto="end">Goto Last Frame</div>
-                     </div>
-                  </div>
-               </div>
-               <!-- frame end -->
-   
-               <div class="each-frame border-box flex-none h-full" title="Lion">
-                  <!-- title shows in top -->
-                  <!-- this is full editable area -->
-                  <div class="main flex w-full p-8">
-                     <div class="sub w-4/6 my-auto">
-                        <img class="w-full p-8"
-                           src="https://image.freepik.com/free-vector/cute-lion-cartoon_160606-353.jpg" alt="">
-                     </div>
-                     <div class="sub w-full my-auto">
-                        <div class="head text-3xl font-bold mb-4">The Lion</div>
-                        <div class="long-text text-lg">The lion is a species in the family Felidae and a member of the
-                           genus
-                           Panthera. It has a muscular, deep-chested body, short, rounded head, round ears, and a hairy
-                           tuft
-                           at the
-                           end of its tail. It is sexually dimorphic; adult male lions have a prominent mane.</div>
-                     </div>
-                  </div>
-               </div>
-               <!-- frame end -->
-   
-               <div class="each-frame border-box flex-none h-full" title="Rat">
-                  <!-- title shows in top -->
-                  <!-- this is full editable area -->
-                  <div class="main flex w-full p-8">
-                     <div class="sub w-4/6 my-auto">
-                        <img class="w-full p-8"
-                           src="https://i.pinimg.com/originals/07/1d/d0/071dd09d7b36e49139fe2cf08ff728a8.jpg" alt="">
-                     </div>
-                     <div class="sub w-full my-auto">
-                        <div class="head text-3xl font-bold mb-4">The Rat</div>
-                        <div class="long-text text-lg">Rats are various medium-sized, long-tailed rodents. Species of rats
-                           are
-                           found
-                           throughout the order Rodentia, but stereotypical rats are found in the genus Rattus. Other rat
-                           genera
-                           include Neotoma, Bandicota and Dipodomys. Rats are typically distinguished from</div>
-                     </div>
-                  </div>
-               </div>
-               <!-- frame end -->
-   
-               <div class="each-frame border-box flex-none h-full" title="Owl">
-                  <!-- title shows in top -->
-                  <!-- this is full editable area -->
-                  <div class="main flex w-full p-8">
-                     <div class="sub w-4/6 my-auto">
-                        <img class="w-full p-8"
-                           src="https://image.freepik.com/free-vector/cartoon-owl-tree-branch_194935-43.jpg" alt="">
-                     </div>
-                     <div class="sub w-full my-auto">
-                        <div class="head text-3xl font-bold mb-4">The Owl</div>
-                        <div class="long-text text-lg">Owls are birds from the order Strigiformes, which includes over 200
-                           species
-                           of mostly solitary and nocturnal birds of prey typified by an upright stance, a large, broad
-                           head,
-                           binocular vision, binaural hearing, sharp talons, and feathers adapted for silent flight.</div>
-                        <div
-                           class="goto border border-gray-400 text-sm font-semibold inline-block mt-2 p-1 px-2 rounded cursor-pointer"
-                           action="goto" goto="0">Goto First Frame</div>
-                     </div>
-                  </div>
-               </div>
-               <!-- frame end -->
-   
-   
+         <div class="carousel-inner">
+           <div class="carousel-item active">
+            <img src="Images/chaturanga.jpg" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"/>
+            <div class="carousel-caption d-none d-md-block">
+               <h5>Siglo VI</h5>
+               <p>El ajedrez se originó en la India bajo el nombre de "Chaturanga".</p>
+             </div>
+           </div>
+           <div class="carousel-item">
+             <img src="Images/Shatranj.jpg" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"/>
+             <div class="carousel-caption d-none d-md-block">
+               <h5>Siglo VII</h5>
+               <p>Se extendió a Persia, donde se conoció como "Shatranj".</p>
+             </div>
+           </div>
+           <div class="carousel-item">
+            <img src="Images/edadMedia.jpg" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"/>
+            <div class="carousel-caption d-none d-md-block">
+               <h5>Edad Media</h5>
+               <p>Llegó a Europa a través de los árabes y se popularizó en España e Italia.</p>
+             </div>
+           </div>
+           <div class="carousel-item">
+            <img src="Images/sigloXV.jpg" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"/>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Siglo XV</h5>
+              <p>Las reglas modernas del ajedrez comenzaron a tomar forma en España e Italia.</p>
             </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Images/sigloXIX.jpg" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"/>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Siglo XIX</h5>
+              <p>Se establecieron los primeros torneos internacionales.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Images/FIDE.jpg" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"/>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Siglo XX</h5>
+              <p>El ajedrez se convirtió en un deporte global con la fundación de la FIDE (Federación Internacional de Ajedrez) en 1924.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Images/deepBlue.png" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"/>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>1998</h5>
+              <p>Deep Blue, una computadora de IBM, venció al campeón mundial Garry Kasparov.</p>
+            </div>
+          </div>           
          </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+         </button>
+       </div>
       </div>
+   </section>
+   <section id="seccion">
+      <h1>Jugadores Famosos</h1>
+      <div id="juagdores">
+         <div id="card">
+            <h1>1</h1>
+            <img src="Images/joseRaulCapablanca.jpg" alt="Capablanca">
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+               Obcaecati numquam excepturi debitis doloribus tenetur 
+               illum quibusdam fugiat eligendi! Nulla sed explicabo modi 
+               ad repellat commodi odit aut unde ab perferendis.
+            </p>
+         </div>
+         <div id="card">
+            <h1>1</h1>
+            <img src="Images/joseRaulCapablanca.jpg" alt="Capablanca">
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+               Obcaecati numquam excepturi debitis doloribus tenetur 
+               illum quibusdam fugiat eligendi! Nulla sed explicabo modi 
+               ad repellat commodi odit aut unde ab perferendis.
+            </p>
+         </div>
+         <div id="card">
+            <h1>1</h1>
+            <img src="Images/joseRaulCapablanca.jpg" alt="Capablanca">
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+               Obcaecati numquam excepturi debitis doloribus tenetur 
+               illum quibusdam fugiat eligendi! Nulla sed explicabo modi 
+               ad repellat commodi odit aut unde ab perferendis.
+            </p>
+         </div>
+         <div id="card">
+            <h1>1</h1>
+            <img src="Images/joseRaulCapablanca.jpg" alt="Capablanca">
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+               Obcaecati numquam excepturi debitis doloribus tenetur 
+               illum quibusdam fugiat eligendi! Nulla sed explicabo modi 
+               ad repellat commodi odit aut unde ab perferendis.
+            </p>
+         </div>
+         <div id="card">
+            <h1>1</h1>
+            <img src="Images/joseRaulCapablanca.jpg" alt="Capablanca">
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+               Obcaecati numquam excepturi debitis doloribus tenetur 
+               illum quibusdam fugiat eligendi! Nulla sed explicabo modi 
+               ad repellat commodi odit aut unde ab perferendis.
+            </p>
+         </div>
+
+      </div>
+
    </section>
 
 </body>
 <script src="./script.js"></script>
-<script src="./carrousel.js"></script>
 </html>

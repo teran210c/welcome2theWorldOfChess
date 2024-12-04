@@ -96,3 +96,22 @@ nav img {
     width: 45%;
     height: 75%;
 }
+
+#historia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.carousel-inner img {
+    width: 100%;  /* Ensures the image spans the full width of its container */
+    height: 400px;  /* Set a fixed height */
+    object-fit: cover;  /* Ensures the image covers the container while maintaining its aspect ratio */
+}
+
+.carousel-caption {
+    background-color: rgba(128, 128, 128, 0.7); /* Gris semitransparente */
+    padding: 10px; /* Espaciado interno para mejor visibilidad */
+    border-radius: 5px; /* Opcional: esquinas redondeadas */
+}
