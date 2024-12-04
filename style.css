@@ -31,7 +31,7 @@ nav img {
     background-image: url(/Images/hero-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    /* opacity: 70%; */
+    opacity: 80%;
 }
 
 #hero-main {
@@ -87,7 +87,7 @@ nav img {
     height: 75vh;
 }
 
-#seccion p, h1 {
+#seccion p {
     width: 80%;
     text-align: center;
 }
@@ -123,7 +123,7 @@ nav img {
     justify-content: center;
     justify-content: space-evenly;
     margin: 20px 20px 20px 20px;
-    height: 150vh;
+    height: 100vh;
 }
 
 #jugadores {
@@ -141,12 +141,51 @@ nav img {
     flex-direction: column;
     align-items: center;
     height: 65vh;
-    width: 25vw;
-    border: 3px solid black;
+    width: 20vw;
+    border: 2px solid black;
     border-radius: 3%;
+    padding-left: 30px;
+    padding-right: 30px;
+    row-gap: 10px;
 }
 
 #jugadores img {
     height: 20vh;
-    width: 20vw;
+    width: 10vw;
+}
+
+#seccion-niveles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px 0 20px;
+    row-gap: 20px;
+    height: 100vh;
+    margin-bottom: 60px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 25vh;
+}
+
+header img {
+    object-fit: contain;
+}
+
+#iconos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 75vh;
+    width: 50vw;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+#iconos img {
+    height: 154px;
+    width: 145px;
 }
