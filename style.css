@@ -510,3 +510,7 @@ footer {
         height: 20px; /* Iconos más pequeños */
     }
 }
+
+.fisher-image {
+    max-height: 140px;
+}
