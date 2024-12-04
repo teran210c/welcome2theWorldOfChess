@@ -115,3 +115,7 @@ nav img {
     padding: 10px; /* Espaciado interno para mejor visibilidad */
     border-radius: 5px; /* Opcional: esquinas redondeadas */
 }
+
+#juagdores {
+    display: flex;
+}
