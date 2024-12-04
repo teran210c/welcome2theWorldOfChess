@@ -2,8 +2,27 @@ body {
     display: flex; 
     flex-direction: column; 
     margin: 0; 
+    font-family: 'Merriweather', serif; /* Fuente aplicada al cuerpo */
     /* height: 100vh;
     width: 100vw; */
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Merriweather', serif; /* Mismo estilo para todos los headings y párrafos */
+}
+
+/* Opcional: personalizar los tamaños para headings */
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6; /* Mejor legibilidad */
 }
 
 nav {
@@ -51,9 +70,56 @@ nav img {
     color: #000000;
 }
 
-#hero-buttons {
+/* Botones del navbar */
+#nav-buttons button {
     display: flex;
-    gap: 10px;
+    border: 1px solid #ccc; 
+    background-color: #f5f5f5; 
+    color: #333; 
+    border-radius: 8px;
+}
+
+/* Estilos específicos para el botón "Aprende más" */
+#hero-buttons #aprende {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+#hero-buttons #aprende:hover {
+    text-decoration: underline;
+}
+
+/* Estilos específicos para el botón "Comienza ahora" */
+#hero-buttons #Comienza {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+    column-gap: 20px;
+}
+
+#hero-buttons #Comienza:hover {
+    text-decoration: underline;
+}
+
+
+.form-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b1b32;
+    color: #f5f6f7;
+}
+
+.form-main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 40vw;
+    height: 100vh;
+    row-gap: 20px;
 }
 
 #video {
@@ -73,8 +139,9 @@ nav img {
 
 .parrafo-video {
     color: #ffffff;
-    width: 25vw;
+    width: 15vw;
     height: fit-content;
+    text-align: center;
 }
 
 #seccion {
@@ -85,6 +152,7 @@ nav img {
     padding: 50px 20px 0 20px;
     row-gap: 20px;
     height: 75vh;
+    background-color: antiquewhite;
 }
 
 #seccion p {
@@ -94,7 +162,7 @@ nav img {
 
 #seccion img {
     width: 45%;
-    height: 75%;
+    height: 70%;
 }
 
 #historia {
@@ -102,19 +170,27 @@ nav img {
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
-}
-
-.carousel-inner img {
-    width: 100%;  /* Ensures the image spans the full width of its container */
-    height: 400px;  /* Set a fixed height */
-    object-fit: cover;  /* Ensures the image covers the container while maintaining its aspect ratio */
+    min-height: 75vh;
+    background: linear-gradient(135deg, #2c3e50, #4ca1af); /* Degradado azul oscuro a claro */
+    color: white; /* Texto blanco para buen contraste */
+    padding: 20px;
+    padding-top: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para añadir profundidad */
 }
 
 .carousel-caption {
-    background-color: rgba(128, 128, 128, 0.7); /* Gris semitransparente */
-    padding: 10px; /* Espaciado interno para mejor visibilidad */
-    border-radius: 5px; /* Opcional: esquinas redondeadas */
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+    color: #ffffff; /* Texto blanco */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
 }
+
+.carousel-inner img {
+    border: 3px solid #ffffff; /* Añade un marco blanco alrededor de las imágenes */
+    border-radius: 10px; /* Esquinas redondeadas */
+    min-height: 75vh;
+}
+
 
 #seccion-jugadores {
     display: flex;
