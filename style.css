@@ -191,15 +191,54 @@ nav img {
     min-height: 75vh;
 }
 
-
 #seccion-jugadores {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 20px; /* Espaciado interno para evitar solapamientos */
+    background-color: #f5f5f5;
+    margin-top: 20px; /* Espaciado externo para separarla de la sección anterior */
+    min-height: auto; /* Ajusta la altura automáticamente */
+    height: auto; /* Elimina restricciones de altura fija */
+    overflow: hidden; /* Asegura que el contenido no se salga */
+}
+
+#jugadores {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; /* Alineación superior */
+    gap: 20px; /* Espacio entre tarjetas */
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    align-items: center;
+    flex: 1 1 calc(100% - 40px); /* Acomoda las tarjetas en pantallas pequeñas */
+    max-width: 300px; /* Tamaño máximo para las tarjetas */
+    margin: 10px; /* Separación entre tarjetas */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    
+}
+
+/* #seccion-jugadores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     justify-content: space-evenly;
-    margin: 20px 20px 20px 20px;
     height: 100vh;
+    background-color: #f5f5f5;
 }
 
 #jugadores {
@@ -209,12 +248,12 @@ nav img {
     justify-content: center;
     align-items: center;
     gap: 30px;
-}
+} */
 
-#card {
+/* #card {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly; /* Distribuye uniformemente imagen y texto */
+    justify-content: space-evenly; 
     align-items: center;
     height: 70vh;
     width: 22vw;
@@ -223,7 +262,7 @@ nav img {
     padding: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
-}
+} */
 
 #card img {
     height: auto;
@@ -263,27 +302,27 @@ nav img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px 20px 0 20px;
     row-gap: 20px;
     height: 100vh;
-    margin-bottom: 60px;
+    background-color: #f5f5f5;
+    padding-bottom: 40px;
 }
 
 header {
     display: flex;
     justify-content: center;
-    height: 25vh;
+    height: 20vh;
 }
 
 header img {
-    object-fit: contain;
+    height: 25vh;
 }
 
 #iconos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 75vh;
+    height: 65vh;
     width: 50vw;
     row-gap: 20px;
     column-gap: 20px;
@@ -317,4 +356,156 @@ header img {
     background-image: url(Images/tablero-bg.webp);
     background-size: cover;
     opacity: 80%;
+}
+
+footer {
+    background-color: #2e2e2e; /* Gris oscuro */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative; /* Por si se quieren anclar elementos internos */
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content p {
+    margin: 5px 0; /* Espaciado entre los textos */
+    font-size: 14px; /* Texto más pequeño */
+}
+
+.github-link {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.footer-icon {
+    width: 30px;
+    height: 30px;
+    filter: invert(1); /* Invertir colores para que el ícono se vea bien sobre fondo oscuro */
+    transition: transform 0.3s ease;
+}
+
+.footer-icon:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
+
+/* General: Estilo para pantallas pequeñas */
+@media (max-width: 768px) {
+    body {
+        font-size: 90%; /* Reduce el tamaño general del texto */
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between; /* Espacio entre el logo y los botones */
+        align-items: center;
+        height: 80px; /* Altura fija para mantener la consistencia */
+        padding: 0 20px; /* Espaciado interno a los lados */
+        background-color: #ffffff; /* Color de fondo fijo */
+        position: fixed; /* La navbar siempre permanece visible */
+        top: 0; /* Posición en la parte superior */
+        width: 100%; /* Ocupa todo el ancho */
+        z-index: 100; /* Asegura que la navbar esté encima de otros elementos */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
+    }
+    
+    nav img {
+        height: 50px; /* Altura fija del ícono */
+        width: auto; /* Mantén las proporciones */
+    }
+    
+    #nav-buttons {
+        display: flex;
+        align-items: center; /* Centra verticalmente */
+        gap: 15px; /* Espacio fijo entre botones */
+    }
+    
+    #nav-buttons button {
+        padding: 10px 20px; /* Tamaño consistente para los botones */
+        border: 1px solid #ccc; 
+        background-color: #f5f5f5; 
+        color: #333; 
+        border-radius: 8px;
+        cursor: pointer; /* Indica que es interactivo */
+        transition: background-color 0.3s ease;
+    }
+    
+    #nav-buttons button:hover {
+        background-color: #e0e0e0; /* Cambia de color al pasar el mouse */
+    }
+    
+
+    #hero {
+        flex-direction: column; /* Reorganiza el contenido verticalmente */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        padding: 20px;
+    }
+
+    #hero-main {
+        margin: 0; /* Elimina los márgenes */
+        text-align: center;
+    }
+
+    #hero-main h1 {
+        font-size: 2rem; /* Reduce el tamaño del texto */
+    }
+
+    #hero-buttons {
+        flex-direction: column; /* Botones apilados */
+        gap: 10px;
+    }
+
+    .form-main {
+        width: 90%; /* Ocupa casi todo el ancho disponible */
+        height: auto; /* Ajusta la altura */
+    }
+
+    #video {
+        height: auto; /* Ajusta la altura */
+        padding: 20px; /* Agrega espacio alrededor */
+        flex-direction: column;
+    }
+
+    .parrafo-video {
+        width: 80%; /* Ajusta el ancho */
+        font-size: 0.9rem; /* Reduce el tamaño del texto */
+    }
+
+    #seccion img {
+        width: 90%; /* Ocupa la mayor parte del ancho */
+        height: auto; /* Mantén la proporción */
+    }
+
+    #jugadores {
+        flex-direction: column; /* Apila las tarjetas verticalmente */
+    }
+
+    #card {
+        width: 90%; /* Ocupa casi todo el ancho disponible */
+    }
+
+    #iconos img {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+/* Estilo específico para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; /* Reduce aún más el tamaño del título */
+    }
+
+    p {
+        font-size: 0.8rem; /* Reduce el tamaño del texto */
+    }
+
+    footer {
+        font-size: 12px; /* Texto más pequeño en el pie de página */
+    }
+
+    .footer-icon {
+        width: 20px;
+        height: 20px; /* Iconos más pequeños */
+    }
 }
